@@ -1,5 +1,5 @@
 .game{
-    width: 255px;
+    width: 312px;
     text-align: center;
     font-family: system-ui;
     color: white;
@@ -16,7 +16,7 @@ span{
 }
 
 .square{
-    width: 80px;
+    width: 100px;
     height: 80px;
     background: rgb(190, 6, 232);
     float: left;

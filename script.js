@@ -1,5 +1,16 @@
 let turn = "x";
+title = document.querySelector(".title");
 let square;
+
+let squares = [];
+
+function winner(){
+    //Get all squares and store them in array
+    for(let i=0 ; i<10 ; i++){
+        squares[i] = document.getElementById("item"+1);
+    }
+
+}
 
 function game(id){
     // query square element
@@ -11,16 +22,19 @@ function game(id){
         square.textContent = "X";
         // move turn to "O"
         turn = "o";
+        title.innerHTML = "O TURN"
+        
     }
 
     // check if it's O turn and the square is empty
     else if(turn === "o" && !(square.textContent)){
 
         // change text content to "O"
-        document.getElementById(id).textContent = "O";
+        square.textContent = "O";
         // move turn to "X"
         turn = "x";
+        title.innerHTML = "X TURN"
     }
-    
+
 }
 
